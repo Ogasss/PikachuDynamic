@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>教你画皮卡丘哇</title>
+    <style>
+        *{
+            border: 0;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            transition: all 0.8s ease
+        }
+
+        .codeWindow{
+            padding-left: 40px;
+            height: 15vh;
+            word-break: break-all;
+            overflow: auto;
+            background-color: gray;
+            color: white;
+            text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+        }
+
+        .theContainer{
+            width:100vw;
+            background-color: rgb(255, 230, 0);
+        }
+        .buttonContainer{
+            width: 50vw;
+            position: fixed;
+            display: flex;
+            bottom: 3%;
+            right: 5%;
+            flex-direction:row;
+            justify-content: space-around;
+        }
+        @media (max-width:900){
+            .buttonContainer{
+                flex-direction: column;
+            }
+
+        }
+            .buttonContainer button{
+                max-width: 160px;
+                width: 20vw;
+                max-height: 60px;
+                height: 8vh;
+                border-radius: 5%;
+                background-color: palevioletred;
+                color: white;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+    </style>
+</head>
+<body>
+        <style id="style"></style>
+
+        <main class="theContainer">
+            <div class="container">
+                <div class="eyeContainer">
+                    <div class="eyeLeft">
+                        <div class="eyeLight"></div>
+                    </div>
+                    <div class="eyeRight">
+                        <div class="eyeLight"></div>
+                    </div>
+                </div>
+            
+
+                <div class="nose"></div>
+
+
+                <div class="faceContainer">
+                    <div class="faceLeft"></div>
+                    <div class="faceRight"></div>
+    
+                </div>
+
+                <div class="mouth">
+                    <div class="mouthTop">
+                        <div class="mouthTopLeft"></div>
+                        <div class="mouthTopRight"></div>                        
+                    </div>
+                    <div class="mouthBottom">
+                        <div class="patch"></div>
+                        <div class="mouthBottomTop"></div>
+
+                        <div class="mouthBottomBottom">
+                        <div class="mouthBottomBottomLeft">
+                                <div class="tongueLeft"></div>
+                            </div>
+                            <div class="mouthBottomBottomRight">
+                                <div class="tongueRight"></div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>                   
+        </main>
+
+        <footer>
+            <div id="html" class="codeWindow">
+            </div>
+
+            <div class="buttonContainer">
+                <button id="parseAndContinue"> 暂停 </button>
+                <button id="slow"> 慢速 </button>
+            </div>            
+        </footer>
+        <script src="main.js"></script>
+</body>
+</html>
